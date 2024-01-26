@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flight booking</title>
+    <link rel="stylesheet" href="flight.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   
+</head>
+<body style="overflow-x: hidden !important;">
+    
+    <div style="width: 100%;overflow:hidden;border:2px solid transparnt;">
+    <header>
+        <P style="padding-left:5rem;"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i>&nbsp;&nbsp;info@ora.com</P>
+        <p style="padding-left: 2rem;">|</p>
+        
+        <p style="padding-left:2rem ;"><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>&nbsp;&nbsp;78 5th Ave,New York,NY 10011,USA</p>
+        <p style="padding-left: 35rem;"><i class="fa-solid fa-circle-user" style="color: #ffffff;"></i>&nbsp;&nbsp;Sign in</p>
+    </header>
+
+    <nav id="home">
+                <img src="./logo1.png" alt="image" class="logo1">
+            
+                <a href="#" style="color: rgb(2,167,249); padding-left:10%; border: 1px solid transparnt">Home</a>
+                
+                <a href="#">Hotels</a>
+                <a href="#">Pages</a>
+                <a href="#">Blog</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Shortcodes</a>
+                <a href="#">Contact</a>
+            
+        
+    </nav>
+    <div style="height: 10vh; width:30%;float:right;background-color: #FFFFFF; margin-top:-66px; display:inline; border-left:6px solid #01ABFF;">
+       
+        <p style="font-size: 20px; padding-left:20px;">1-1920-305-<br>3324</p>
+       <p style="padding-left:20px;">Toll Free & 24/7 Available</p>
+    </div>
+    
+</div>
+
+<img src="./logo2.png" style="float:right ; margin-top:-55px; left:68.5%;position:absolute;">
+  <div class="slideshow">
+    <h1 class="slide-content1">T  R  A  V  E  L</h1>
+    <P class="slide-content2">Book Flights,Hotels and Holiday packages</P>
+    
+    <div class="hotels">
+      <i class="fa-solid fa-key" style="padding-top:12%;position:relative;padding-left:20%;color:white;"></i><p style="text-align: center;padding-top: 12%; font-size: 20px; font-family:Helvetica; color: white; display:inline-block;">&nbsp;Hotels</p>
+     </div>
+    <div class="packages">
+      <i class="fa-solid fa-suitcase" style="color: #003A6C; padding-left:13%; "></i><p style="text-align: center;padding-top:12%; font-size: 20px; font-family:Helvetica; color: black; display:inline-block;">&nbsp;Packages</p>
+    </div>
+
+    <div class="input-container">
+     
+      <p style="padding-left: 1rem;">Arrival Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><i class="fa-solid fa-calendar-check" style="color: #dbdbdc;"></i>
+      <p style="padding-left: 5rem;">Departure Date&nbsp;&nbsp;&nbsp;&nbsp;</p><i class="fa-solid fa-calendar-check" style="color: #dbdbdc;"></i>
+      
+      <label for=""></label>
+      <select id="Adults" name="" style="width: 20%; height:3vh; position:relative; border:none;font-family:Arial;color: #8C8C8C;font-size:17px;">
+          <option value="2">Adults</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+         
+      </select>
+      
+      <label for=""></label>
+      <select id="Children" name="" style="width: 20%; height:3vh; position:relative; border:none;font-family:Arial;color: #8C8C8C; font-size:17px;">
+          <option value="2">Children</option>
+          <option value="2">1</option>
+          <option value="3">2</option>
+          
+         
+      </select>
+  </div>
+    <img src="./image1.jpg" alt="" class="img">
+    
+  </div>
+  
+  <script>
+    let imgEle=document.querySelector('.img');
+    imgs=["./image2.jpg","./image3.jpg","./image4.jpg","./image5.webp"];
+    let i=0;
+    setInterval(
+        ()=>{
+        imgEle.src=imgs[i];
+        i++;
+        if(i==imgs.length){
+            i=0
+            
+        }
+    },5000);
+
+  </script>
+  <div class="two">
+    
+      <h3 style="color: #003A6C; position: absolute; padding-left:3rem; font-family:Arial, Helvetica, sans-serif;font-size:20px;padding-top:5%;">B R O W S E<br><br>L O C A T I O N S</h3>
+    <img src="./loc1.png" alt="image" style="padding-top: 17%;padding-left:3rem; position:absolute;">
+    <div class="slideshow-container">
+      <div class="explore">
+          <img src="./tour1.jpg" alt="">
+          <img src="./tour2.jpg" alt="">
+          <img src="./tour3.jpg" alt="">
+          <img src="./tour4.jpg" alt="">
+          
+          
+      </div>
+  <h3 style="top:0.1vh; position:absolute;left:23%;font-size:22px;font-family:Arial;color:white;">Florida</h3>
+  <h3 style="top:0.1vh; position:absolute;left:43%;font-size:22px;font-family:Arial;color:white;">Thailand</h3>   
+  <a class="prev" onclick="plusSlides(-1)">&#60;</a>
+      <a class="next" onclick="plusSlides(1)">&#62;</a>
+     
+  </div>
+  <div class="textbox1">
+    <h3 style="color: #004371;">Them Best Great Tourism is Right<br>Here</h3>
+    <p><br>Better Travel Packages like any other</p>
+    <p><br><br>Dummy text ever since the 1500s, when<br><br>an unknown printer took. A galley of type and<br><br>scrambled it to make a type specimen book. It<br><br>has survived not only five centuries. Dummy<br><br>text ever since the 1500s, when an unknown<br><br>printer took. A galley of type.</p>
+  <div class="joinadventure" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+    <h4>JOIN&nbsp; ADVENTURE</h4>
+  </div>
+  </div>
+  <div class="textbox2">
+    <h3 style="color: #004371;">Our Awards<br><br></h3>
+    <p>Dummy text ever since the 1500s, when an<br><br>unknown printer took. A galley of type and<br><br>scrambled it to make a type specimen book. It<br><br>has survived not only five centuries. Dummy<br><br>text ever since the 1500s, when an unknown<br><br>printer took. A galley of type. Scrambled it to<br><br>make a type specimen book.</p>
+    <div class="awards">
+    <img src="./award1.png" alt="">
+     <img src="./award2.png" alt="">
+     <img src="./award3.png" alt="">
+  </div>
+</div>
+        <div class="world1">
+          
+          <img src="./world1.png" alt="image" class="tower">
+          
+          
+        </div>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const img = document.querySelector('.tower');
+            let rtdeg = 0;
+            setInterval(() => {
+              rtdeg++;
+              img.style.transform = `rotate(${rtdeg}deg)`;
+         }, 30);
+          });
+        </script>
+        <h3 style="position: absolute;color:#004371;top:235vh;left:37%; font-family:Arial, Helvetica, sans-serif;font-size:25px;">Travel through the Amazing<br><br></h3>
+        <h1 style="position: absolute;color:#004371;top:240vh;left:37%; font-family:Arial, Helvetica, sans-serif;font-size:90px;">WORLD</h1>
+      <h4 style="position: absolute;color:#746D87;top:258vh;left:40%; font-size:20px;">G R E A T E R &nbsp;&nbsp;T O U R I S M</h4>
+      </div>
+      <div class="three">
+        <i class="fa-solid fa-plane-departure"  style="position: absolute; padding-top:5%; font-size:30px; color:#003A6C;padding-left:5%;"></i><h3 style="position: absolute; color:#003A6C; left:5%;top:30%;font-family:Arial, Helvetica, sans-serif;"><br>FLIGHT TICKETS</h3>
+        <p style="color: #003A6C; position:absolute; left:5%;top:55%; color:rgba(0, 0, 0, 0.85);font-size:20px;">Dummy text ever since the very<br><br> 1500s, when an unknown<br><br> printer took.</p>
+     
+        <i class="fa-solid fa-bed  fa-lg" style="position: absolute; padding-top:6%;font-size:30px;color:#003A6C;padding-left:40%;"></i><h3 style="position: absolute; color:#003A6C; left:40%;top:30%;font-family:Arial, Helvetica, sans-serif;" ><br>H O T E L<br>R E S E R V A T I O N</h3>
+        <p style="color: #003A6C; position:absolute; left:40%;top:55%; color:rgba(0, 0, 0, 0.85);font-size:20px;">A gallery of type and scrambled<br><br>it to make a type specimen book<br><br>it to make.</p>
+        <i class="fa-solid fa-compass" style="position: absolute; padding-top:5%;font-size:30px;color:#003A6C;padding-left:75%;"></i><h3 style="position: absolute; color:#003A6C; left:75%;top:30%;font-family:Arial, Helvetica, sans-serif;" ><br>F L I G H T T I C K E T S</h3>
+        <p style="color: #003A6C; position:absolute; left:75%;top:55%; color:rgba(0, 0, 0, 0.85);font-size:20px;">Dummy text ever since the very<br><br>1500s,when an unknown<br><br>printer look.</p>
+        <img src="./pool.jpg" alt="image" class="pool">
+        
+
+
+        <div class="ton">
+          <h3 style="position:relative; top:1px; color:#003A6C;font-family:Arial, Helvetica, sans-serif;font-size:25px;">&nbsp;&nbsp;PopularPackages</h3>
+          <div class="slider">
+            <div class="slides">
+              
+              <figure>
+              
+                <img src="./slide1.jpg" alt="">
+                <figcaption>James Bond Island<br>Thai Special 7 days<br><br></figcaption><i class="fa-solid fa-location-dot fa-fade" style="color: #858585;font-size:30px;"></i><p><br>Australia</p>
+              </figure>
+              <figure>
+                <img src="./slide2.jpg" alt="">
+                <figcaption>A Trip to villa De<br> cosa 7 Days 6<br> Nights<br><br></figcaption><i class="fa-solid fa-location-dot fa-fade" style="color: #858585;font-size:30px;"></i><p><br>France,Paris</p>
+              </figure>
+              <figure>
+                <img src="./slide3.jpg" alt="">
+                <figcaption>Port Blair,Havelock<br>in 5 Nights with<br>Flights<br><br></figcaption><i class="fa-solid fa-location-dot fa-fade" style="color: #858585;font-size:30px;"></i><p><br>France,Paris</p>
+              </figure>
+              <figure>
+                <img src="./slide4.jpg" alt="">
+                <figcaption>Magical London<br>Bridge with Neil stay<br><br></figcaption><i class="fa-solid fa-location-dot fa-fade" style="color: #858585;font-size:30px;"></i><p><br>Paris,Vietnam</p>
+              </figure>
+              <figure>
+                <img src="./slide5.jpg" alt="">
+                <figcaption>A Trip t villa De<br>Cosa 3 Days 2<br>Nights<br><br></figcaption><i class="fa-solid fa-location-dot fa-fade" style="color: #858585;font-size:30px;"></i><p><br>France,Vietnam</p>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          
+          let currentSlide = 0;
+          const slides = document.querySelectorAll(".ton .slider figure");
+      
+          function showSlide(index) {
+            const slideWidth = slides[0].offsetWidth;
+            const translateX = -index * slideWidth;
+            document.querySelector(".ton .slider .slides").style.transform = `translateX(${translateX}px)`;
+          }
+      
+          function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+          }
+      
+         
+          function startSlideshow() {
+            showSlide(currentSlide);
+            setInterval(nextSlide, 2000); 
+          }
+      
+          
+          window.addEventListener("load", startSlideshow);
+        </script>
+
+        <div class="four">
+          <h3 style="color: #003A6C;font-family:Arial, Helvetica, sans-serif;font-size:23px;top:10%;padding-left:7%;position:relative;">  W H Y  &nbsp;U S?</h3>
+          <img src="./girl.png" alt="image" class="girl" style="right: 5%;">
+          <i class="fa-solid fa-earth-americas" style="font-size:25px;padding-left:4%;top:17%;position:relative;"></i> <h3 style="color: #003A6C;font-family:Arial, Helvetica, sans-serif;font-size:20px;top:13.5%;left:7%;position:relative;">All Around the world Tours<br></h3>
+       <p style="color: white;font-family:Arial, Helvetica, sans-serif;padding-left:7%;top:19%;position:relative;">Dummy text ever since the 1500s, when an unknown<br><br> printer took. A galley of type and scrambled it to make a<br><br> type</p>
+      
+
+          <i class="fa-solid fa-suitcase-rolling" style="font-size:25px;padding-left:4%;top:25%;position:relative;"></i> <h3 style="color: #003A6C;font-family:Arial, Helvetica, sans-serif;font-size:20px;top:17.5%;left:7%;position:relative;"><br>Private & Customized Tours<br></h3>
+       <p style="color: white;font-family:Arial, Helvetica, sans-serif;padding-left:7%;top:21%;position:relative;">Dummy text ever since the 1500s, when an unknown<br><br> printer took. A galley of type and scrambled it to make a<br><br> type</p>
+      
+       <i class="fa-solid fa-camera-retro" style="font-size:25px;padding-left:4%;top:29.5%;position:relative;"></i> <h3 style="color: #003A6C;font-family:Arial, Helvetica, sans-serif;font-size:20px;top:25.5%;left:7%;position:relative;">All Around the world Tours<br></h3>
+    <p style="color: white;font-family:Arial, Helvetica, sans-serif;padding-left:7%;top:29%;position:relative;">Dummy text ever since the 1500s, when an unknown<br><br> printer took. A galley of type and scrambled it to make a<br><br> type</p>
+   
+     </div>
+
+     <div class="five">
+     
+     <div class="rect">
+      <center>
+        
+        <h2 style="padding-top: 3vh;font-family:Arial, Helvetica, sans-serif;color:white;">FOLLOW&nbsp; AN&nbsp; ADVENTURE</h2>
+        <p style="font-size: 18px;color:white"><br>Anything you like</p>
+      </center>
+     
+     <div class="rect1 x" >
+      <p>ki</p>
+     </div>
+     <div class="rect2 x">
+      
+     </div>
+     <div class="rect3 x">
+      
+     </div>
+     <div class="rect4 x">
+      
+     </div>
+     <div class="rect5 x">
+      
+     </div>
+     <div class="rect6 x">
+      
+     </div>
+     <div class="rect7 x">
+      
+     </div>
+     <div class="rect8 x">
+      
+     </div>
+     <div class="rect9 x">
+      
+     </div>
+    
+     </div>
+    
+    </div>
+
+    <div class="six" style="background-color: #FFFFFF;">
+      <h3 style="color: #003A6C;font-family:Arial, Helvetica, sans-serif;font-size:30px;text-align:center;top:4%;position:relative;">AROUND THE WORLD WITH US</h3>
+    <p style="text-align: center;font-family:Arial, Helvetica, sans-serif;color:#858585;top:7%;position:relative;">The World is not Enough.Travel with us</p>
+    <img src="./Australia.png" alt="">
+    <img src="./asia.png" alt="">
+    <img src="./africa.png" alt="">
+    <img src="./asia (1).png" alt="">
+    <img src="./Europe.png" alt="">
+    <img src="./north-america.png" alt="">
+
+    <div class="cont" style="display:flex; text-align:center;">
+      <a>-----------</a>
+      <div class="circle"></div>
+      <a>------------------------------</a>
+      <div class="circle"></div>
+      <a>---------------------------------------</a>
+      <div class="circle"></div>
+      <a>------------------------------</a>
+      <div class="circle"></div>
+      <a>-------------------------------------</a>
+      <div class="circle"></div>
+      <a>------------------------------</a>
+      <div class="circle"></div>
+      <a>----------------</a>
+       </div>
+    <div class="matter">
+      <p>&nbsp;&nbsp;&nbsp;AFRICA</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ASIA</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NORTH AMERICA</p>
+      <p>AUSTRALIA</p>
+      <p>&nbsp;&nbsp;&nbsp;EUROPE</p>
+      <p>SOUTH AMERICA</p>
+    </div>
+    <div class="sub-matter">
+      <p>&nbsp;&nbsp;&nbsp;1505 Locations</p>
+      <p>7535 Locations</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3335 Locations</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;1973 Locations</p>
+      <p>3633 Locations</p>
+      <p>1117 Locations</p>
+    </div>
+
+    <ul class="list1">
+     
+      <li>Grand Canyon</li>
+      <li>Niagara Falls</li>
+      <li>olden Gate ional Cementry</li>
+      <li>Historic QuebeBridge</li>
+      <li>Big sur Region</li>
+      <li>Statue of Liberty</li>
+      <li>Arlington Natc City</li>
+      <li>Tenochtitlan</li>
+      
+    </ul>
+    <ul class="list2">
+      <li>White house</li>
+      <li>yellowstone park</li>
+      <li>Napa Valley</li>
+      <li>Alcatraz Prison</li>
+      <li>CN Tower</li>
+      <li>Dinosaur provincial park</li>
+      <li>Disney World</li>
+      <li>Bay of Fundy</li>
+    </ul>
+    <ul class="list3">
+      <li>Lincoin Park</li>
+      <li>Legoland</li>
+      <li>Banff National park </li>
+      <li>American Independence museum</li>
+      <li>Battleship USS North Carolina</li>
+      <li>Deccan valley</li>
+      <li>Legland Discovery Center</li>
+      <li>Fairytale Town</li>
+    </ul>
+
+    </div>
+      
+    <div class="seven">
+      <i class="fa-solid fa-jet-fighter-up" style="color: #FFFFFF;font-size:30px;top:15vh;left:15%;position:relative;"></i><p style="color: white;font-size:26px;position:relative;left:14%;top:12vh;font-family:Arial, Helvetica, sans-serif"><br><br>9000+</p><p style="color: white;position:relative;left:12.3%;top:13vh;font-family:Arial, Helvetica, sans-serif;"><br>Travel Packages</p>
+      <i class="fa-solid fa-earth-americas" style="color: #FFFFFF;font-size:30px;top:-9vh;left:35%;position:relative;"></i><p style="color: white;font-size:26px;position:relative;left:34.5%;top:-12vh;font-family:Arial, Helvetica, sans-serif"><br><br>280</p><p style="color: white;position:relative;left:31.5%;top:-11vh;font-family:Arial, Helvetica, sans-serif;"><br>Branches all over</p>
+      <i class="fa-solid fa-glasses" style="color: #FFFFFF;font-size:30px;top:-33vh;left:55%;position:relative;"></i><p style="color: white;font-size:26px;position:relative;left:54.5%;top:-36vh;font-family:Arial, Helvetica, sans-serif"><br><br>900+</p><p style="color: white;position:relative;left:52.5%;top:-35vh;font-family:Arial, Helvetica, sans-serif;"><br>Expert Agents</p>
+      <i class="fa-solid fa-parachute-box" style="color: #FFFFFF;font-size:32px;top:-56vh;left:75%;position:relative;"></i><p style="color: white;font-size:26px;position:relative;left:74.5%;top:-60vh;font-family:Arial, Helvetica, sans-serif"><br><br>1920</p><p style="color: white;position:relative;left:73%;top:-120%;font-family:Arial, Helvetica, sans-serif;"><br>Activities Listed</p>
+       </div>
+
+       
+
+       <div class="eight">
+        
+        <ul class="list4">
+          <li style="list-style-type: none; color:#003A6C;font-size:18px;">VACATION PACKAGE</li>
+          <li>Orinado Vacations</li>
+          <li>New York Vacations</li>
+          <li>Miami Vacations</li>
+          <li>San Diego Vacations</li>
+          <li>San Francisco Vacations</li>
+          <li>Los Angeles Vacations</li>
+          
+        </ul>
+        <ul class="list5">
+          <li style="list-style-type: none; color:#003A6C;font-size:18px;">BOOKING TICKETS</li>
+          <li>Boston Hotels</li>
+          <li>Walt Disney World</li>
+          <li>Las Vegas Hotels</li>
+          <li>Maui Hotels</li>
+          <li>New York Hotels</li>
+          <li>San Francisco Hotels</li>
+         
+        </ul>
+        <ul class="list6">
+          <li style="list-style-type: none; color:#003A6C;font-size:18px;">FLIGHT TICKETS</li>
+          <li>Flights to Las vegas</li>
+          <li>Flights to Los Angeles</li>
+          <li>Flights to Oriando</li>
+          <li>Flights to Miami</li>
+          <li>Flights to Francisco</li>
+          <li>Flights to Chicago</li>
+          
+        </ul>
+        <div class="nand">
+          ,<h3 style="top: -1.5rem;position:absolute; color:#003a6cc2">TRUSTED BY</h3>
+          <img src="./sky1.png" alt="" class="blog1">
+          <img src="./sky2.png" alt="" class="blog2">
+          <img src="./sky3.png" alt="" class="blog3">
+          <img src="./sky4.png" alt="" class="blog4">
+        </div>
+    
+          
+      </div>
+      <div class="icons">
+        
+        <div class="icon1">
+          <img src="./pillar1.jpg" alt="" style="position: absolute;left:0%;top:633.6vh;">
+          <p>Activities&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</p>
+          <p>Destination&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</p>
+          <p>Hotel Rooms</p>
+         <p style="font-family: Arial, Helvetica, sans-serif;font-size:19px;left:65%;position:absolute;">Follow us:</p> <div class="icon2">
+            <div class="subic1">
+              <i class="fa-brands fa-facebook" style="color: #ffffff;padding-left:10px;position:absolute;padding-top:8px;"></i>
+            </div>
+            <div class="subic2">
+              <i class="fa-brands fa-twitter" style="color: #ffffff;padding-left:10px;position:absolute;padding-top:8px;"></i>
+            </div>
+            <div class="subic3">
+              <i class="fa-brands fa-linkedin-in" style="color: #ffffff;padding-left:10px;position:absolute;padding-top:8px;"></i>
+            </div>
+            <div class="subic4">
+              <i class="fa-brands fa-instagram" style="color: #ffffff;padding-left:10px;position:absolute;padding-top:8px;"></i>
+            </div>
+            <img src="./pillar.jpg" alt="" style="position: absolute;top:-26.6vh;left:110%;background-color:white;">
+            <div class="subic5">
+              <i class="fa-brands fa-youtube" style="color: #ffffff;padding-left:10px;position:absolute;padding-top:8px;"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nine">
+        <P style="font-family: Arial, Helvetica, sans-serif;font-size:20px;color:#2F2F2F;left:10%;position:relative;top:6vh;">Subscribe To News Letter</P>
+      <input type="email" placeholder="Email" class="email">
+      <button style="height: 9vh;width:7%;position:absolute;margin-left:-7%;margin-top:9vh;">SEND</button>
+      <p style="color: #858585;left:10%;position:relative;top:2vh;">*We don't spam</p>
+      <i class="fa-solid fa-phone" style="color: #b0b0b0;position:relative;top:-15vh;left:65%;font-size:28px;"></i><p style="position: relative;top:-19vh;left:69%;font-family:Arial, Helvetica, sans-serif;color: #6E6C6C;">1-1920-305-3324</p>      
+      <p style="position: relative;top:-17vh;left:69%;font-family:Arial, Helvetica, sans-serif;color: #6E6C6C;">1-1920-305-4424</p>
+      <i class="fa-regular fa-envelope" style="color: #949494; position:relative;top:-12vh;left:65%;font-size:25px;"></i><a href="#home" class="mail">info@ora.com</a>
+      <i class="fa-solid fa-location-dot" style="color: #6E6C6C; font-size:30px;position:relative;left:73%;top:-25vh;"></i><p style="position: relative;left:86%;top:-29vh;font-family:Arial, Helvetica, sans-serif;color:#6E6C6C;">78 5th Ave, New York,<br><br>NY 10011, USA</p>
+      
+      <div class="line">
+        
+      </div>
+
+    </div>
+
+    <div class="lastouch">
+      <p style="color:#6E6C6C;position:relative;left:10%;top:5vh;font-family:Arial, Helvetica, sans-serif;font-size:15px;">2019 <a href="" style="text-decoration: none;color:#6E6C6C;font-family:Arial, Helvetica, sans-serif;font-size:15px;">DesignThemes</a> @ ORA</p> 
+     <div class="final">
+      <a href="">Help&nbsp;&nbsp;&nbsp;|</a>
+      <a href="">&nbsp;Send Feedback&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+      <a href="">&nbsp;&nbsp;Privacy Terms</a>
+      <a href="#home" id="totop">
+        <img src="./totop.png" alt="" class="totop">
+      </a>
+      
+    </div> 
+      
+    </div>
+</body>
+</html>
